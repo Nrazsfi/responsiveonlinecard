@@ -58,8 +58,8 @@ img {
   max-width: 15vw;
   max-height: 15vh;
   margin:2%;
-  top: 35;
-  left: 25;
+  top: 5%;
+  left: 5%;
   border-radius: 50%;
   padding: 2px;
   filter: saturate(0%);
@@ -86,6 +86,7 @@ img:hover {
   letter-spacing: 0.2rem;
   border-radius: 2%;
 }
+
 
 h1 {
   font-size: 3rem;
@@ -114,7 +115,10 @@ p{
   width: 100%;
   position: absolute;
   bottom: 0;
-  left: 50vw;
+  text-align: center;
+  background-color: black;
+  opacity: 85%;
+  
 }
 
 /* Contact links */
@@ -123,20 +127,27 @@ ul {
 }
 li {
   display: inline-flex; 
-  background-color: white;
   background-size: cover;
 }
 
 a {
   text-decoration: none;
-  color: blue;
-  border:0.1rem blue solid;
+  color: white;
+  border:0.1rem black solid;
   border-radius: 20%;
   padding: 0.2rem;
   margin-right: 0.2rem;
-  filter: saturate(0%)
+  filter: saturate(100%)
 }
 
 a:hover {
   filter: saturate(80%);
+}
+
+@media (max-width: 768px) {
+
+	.container {
+			font-size: 85%;
+		}
+
 }
